@@ -1,7 +1,7 @@
 import logging
 import os
 from flask import Flask, request
-from telegram import Update, Bot
+from telegram import Update, Bot, ReplyKeyboardMarkup
 from telegram.ext import (
     Application,
     CommandHandler,
@@ -9,7 +9,6 @@ from telegram.ext import (
     ConversationHandler,
     ContextTypes,
     filters,
-    ReplyKeyboardMarkup
 )
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
