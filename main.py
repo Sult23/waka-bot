@@ -68,17 +68,11 @@ async def confirm_order(update: Update, context: ContextTypes.DEFAULT_TYPE):
     context.user_data['payment'] = update.message.text
     data = context.user_data
     order_text = (
-        "🛒 *Новый заказ:*
-
-"
-        f"👤 Имя: {data['name']}
-"
-        f"📞 Телефон: {data['phone']}
-"
-        f"📍 Адрес: {data['address']}
-"
-        f"💨 Вкус: {data['flavor']}
-"
+        "🛒 *Новый заказ:*"
+        f"👤 Имя: {data['name']}"
+        f"📞 Телефон: {data['phone']}"
+        f"📍 Адрес: {data['address']}"
+        f"💨 Вкус: {data['flavor']}"
         f"💰 Оплата: {data['payment']}"
     )
     await update.message.reply_text("Спасибо! Ваш заказ принят.")
