@@ -30,7 +30,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 async def info(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(
-        "Мы продаём электронные сигареты Waka с доставкой по городу Тараз.
+        "Мы продаём электронные сигареты Waka с доставкой по городу Тараз."
 "
         "Оплата Kaspi или наличными при получении."
     )
